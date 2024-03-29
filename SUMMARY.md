@@ -1,3 +1,8 @@
 # Table of contents
 
-* [Page](README.md)
+* [🚀 Getting Started](README.md)
+  * [Platform Installation](getting-started/platform-installation.md)
+
+## Platform
+
+* [📁 Projects](platform/projects.md)
