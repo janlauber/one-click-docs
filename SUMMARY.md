@@ -7,9 +7,7 @@
 
 * [👖 Pocketbase](platform/pocketbase.md)
 * [📃 Blueprints](platform/blueprints.md)
-* [📁 Projects](platform/projects.md)
-  * [Overview](platform/projects/overview.md)
-  * [Settings](platform/projects/settings.md)
+* [📂 Projects](platform/overview.md)
 * [🗺️ Map](platform/map.md)
 * [⏱️ Rollouts](platform/rollouts.md)
 * [💾 Image](platform/image.md)
