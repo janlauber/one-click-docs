@@ -5,8 +5,9 @@
 
 ## Platform
 
+* [👖 Pocketbase](platform/pocketbase.md)
 * [📃 Blueprints](platform/blueprints.md)
-* [📁 Projects](platform/projects/README.md)
+* [📁 Projects](platform/projects.md)
   * [Overview](platform/projects/overview.md)
   * [Settings](platform/projects/settings.md)
 * [🗺️ Map](platform/map.md)
@@ -23,10 +24,6 @@
 * [🏗️ Architecture](operator-manual/architecture.md)
 * [🔧 Setup Guide](operator-manual/setup-guide.md)
 * [🧬 CRD](operator-manual/crd.md)
-
-## Pocketbase manual
-
-* [Page 2](pocketbase-manual/page-2.md)
 
 ## additional resources
 
