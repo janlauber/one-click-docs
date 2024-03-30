@@ -18,6 +18,17 @@ Each project has it's own overview page where you can see the details of the pro
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>project card</p></figcaption></figure>
 
+There will be a Kubernetes namespace each One-Click project with certain labels:
+
+| label                             | description                           |
+| --------------------------------- | ------------------------------------- |
+| project.one-click.dev/displayName | The users display name in pocketbase. |
+| project.one-click.dev/name        | The project name which is the ID.     |
+| project.one-click.dev/userId      | The users ID of the project.          |
+| project.one-click.dev/username    | The username of the project.          |
+
+<figure><img src="../.gitbook/assets/Screenshot 2024-03-30 at 16.48.07.png" alt=""><figcaption><p>example project namespace</p></figcaption></figure>
+
 ### Overview
 
 In the project overview, you can see the counts of: rollouts, instances, interfaces, volumes, envs and secrets. You can also see the current container image. There is also a cpu and memory usage graph for the project.
