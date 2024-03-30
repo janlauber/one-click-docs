@@ -17,3 +17,4 @@ layout:
 
 # 🚀 Getting Started
 
+<figure><img src=".gitbook/assets/Screen Shot 2024-03-30 at 12.29.52-fullpage.png" alt=""><figcaption><p>Project overview</p></figcaption></figure>
