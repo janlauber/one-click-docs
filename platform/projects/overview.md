@@ -16,8 +16,18 @@ You can also set some labels for the project. Labels are used to group projects 
 
 Each project has it's own overview page where you can see the details of the project and it's resources.
 
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>project card</p></figcaption></figure>
+
+### Overview
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>project overview</p></figcaption></figure>
+
 ### Project settings
 
-In the project settings, you can change the project name, description, and labels. You can also delete the project from the project settings.
-There is also an option to use advanced editing mode for the project. Head over to the [Operator CRD](../../operator-manual/crd.md "mention") section to learn more about the Operator CRD.
-You can also directly create a new blueprint from the selected project.
+In the project settings, you can change the project **name**, **description**, and **labels**. You can also **delete** the project from the project settings. There is also an option to use _advanced editing_ mode for the project. Head over to the [crd.md](../../operator-manual/crd.md "mention") section to learn more about the Operator CRD. You can also directly create a new **blueprint** from the selected project.
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>project settings</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>advanced editing</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>new blueprint from project</p></figcaption></figure>
