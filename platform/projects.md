@@ -30,12 +30,18 @@ In the project settings, you can change the project **name**, **description**, a
 
 #### Project settings
 
+In the project settings, you can change the project name, description, and labels. You can also delete the project from the project settings which will also delete the namespace in the Kubernetes cluster.
+
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>project settings</p></figcaption></figure>
 
 #### Advanced editing
 
+With advanced editing, you can add settings to the project that are not available in the UI. You can also see the raw CRD of the project.
+
 <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>advanced editing</p></figcaption></figure>
 
 #### New blueprint from project
+
+With a new blueprint from the project, you can create a new blueprint with the same settings as the project. The only thing which is not copied are the ingress settings.
 
 <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>new blueprint from project</p></figcaption></figure>
