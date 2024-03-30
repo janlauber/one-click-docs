@@ -9,3 +9,15 @@ To create a new project, log in to the One-Click platform and click on the top r
 {% hint style="info" %}
 You first need to create a blueprint before you can create a project. Head over to the [blueprints.md](../blueprints.md "mention") section to learn more about blueprints.
 {% endhint %}
+
+You can also set some labels for the project. Labels are used to group projects together and can be used to filter projects in the project list.
+
+## Manage existing projects
+
+Each project has it's own overview page where you can see the details of the project and it's resources.
+
+### Project settings
+
+In the project settings, you can change the project name, description, and labels. You can also delete the project from the project settings.
+There is also an option to use advanced editing mode for the project. Head over to the [Operator CRD](../../operator-manual/crd.md "mention") section to learn more about the Operator CRD.
+You can also directly create a new blueprint from the selected project.
