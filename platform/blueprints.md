@@ -6,19 +6,19 @@ Blueprints are stored configurations of a One-Click [CRD](../operator-manual/crd
 
 After you are logged into your One-Click account you can see the Blueprints button. When you click on this button you will get navigated to the blueprints overview page.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>blueprint button</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>blueprint button</p></figcaption></figure>
 
 On this overview page you see your blueprints and also the one's from your community. These are blueprints other users in the same One-Click instance shared with you through a link.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>overview</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>overview</p></figcaption></figure>
 
 When you click on the 3 dots of a blueprint you can "edit", "share" or "delete" the selected blueprint.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>actions</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>actions</p></figcaption></figure>
 
 {% hint style="info" %}
 The little **lock** icon indicates, that this blueprint is private and cannot get added from other users through the link:\
-<img src="../.gitbook/assets/image (5).png" alt="" data-size="original">
+<img src="../.gitbook/assets/image (5) (1).png" alt="" data-size="original">
 
 You can also make your blue print public and after your user added it you can make it private and the user still has access.
 {% endhint %}
@@ -45,7 +45,7 @@ The user who shared his blueprint sees now the Shared count increasing and when 
 
 You can easily create new blueprints by clicking on the "New Blueprint" button.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>new blueprint</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>new blueprint</p></figcaption></figure>
 
 Only the owner of the blueprint can edit it again:
 
