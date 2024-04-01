@@ -12,11 +12,13 @@ Pocketbase uses JWT tokens for authentication. The frontend sends a request to t
 
 We also support the ability to use the following authentication providers:
 
-- Google
-- Github
-- Microsoft
+* Google
+* Github
+* Microsoft
 
 The frontend will automatically display the login buttons for these providers if they are enabled in the pocketbase backend.
+
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>pocketbase settings</p></figcaption></figure>
 
 ## Custom Endpoints
 
