@@ -10,7 +10,7 @@ If you don't want to manually update your image tag each time you push a new ver
 
 * Interval: the cron ticker defined in the [pocketbase.md](pocketbase.md "mention") environment variable will check the modulo of the minutes and checks the registry in this interval. So it's crucial to let the cron tick interval at 1m as it is default.
 * Pattern: a regex pattern which parses the image tag. The default is the default semver notation x.x.x
-* Policy: the policy (**semver** or **timestamp**) defines the sorting.
+* Policy: the policy (**semver** or **timestamp**) defines the sorting. For timestamp it will only work if the image tag is a **unix** timestamp.
 
 The behaviour and consept is similar to the one of fluxcd: [**https://fluxcd.io/flux/guides/image-update/**](https://fluxcd.io/flux/guides/image-update/)
 
@@ -18,8 +18,8 @@ The behaviour and consept is similar to the one of fluxcd: [**https://fluxcd.io/
 
 #### Examples
 
-| Pattern           | Policy | Note                                                               |
-| ----------------- | ------ | ------------------------------------------------------------------ |
-| ^\d+.\d+.\d+$     | semver | Default x.x.x semver pattern. e.g. 1.2.0 will get updated to 1.2.1 |
-| dev-^\d+.\d+.\d+$ | semver | Default x.x.x semver pattern with a prefix.                        |
-|                   |        |                                                                    |
+| Pattern           | Policy    | Note                                                               |
+| ----------------- | --------- | ------------------------------------------------------------------ |
+| ^\d+.\d+.\d+$     | semver    | Default x.x.x semver pattern. e.g. 1.2.0 will get updated to 1.2.1 |
+| dev-^\d+.\d+.\d+$ | semver    | Default x.x.x semver pattern with a prefix.                        |
+| .*                | timestamp | Any pattern will get updated with a unix timestamp.                |
