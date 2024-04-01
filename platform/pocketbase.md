@@ -50,3 +50,8 @@ All endpoints are protected by the JWT authentication, except the websocket endp
 | ------------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
 | `LOCAL`       | `false`       | Set to `true` if you're running KubeLab locally. It will take your local kubeconfig under **.kube/config**                         |
 | `CronTick`    | `*/1 * * * *` | The tick in cron notation at which the auto image update will check for new updates in the registry. Do not change this under 1min |
+
+## Extended Information
+
+For more information about pocketbase, please visit the [official documentation](https://pocketbase.io/docs).
+Also dig into the source code of our implementations and try to understand how we use pocketbase in our project.
