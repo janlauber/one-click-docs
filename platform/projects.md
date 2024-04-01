@@ -33,7 +33,7 @@ There will be a Kubernetes namespace each One-Click project with certain labels:
 
 In the project overview, you can see the counts of: rollouts, instances, interfaces, volumes, envs and secrets. You can also see the current container image. There is also a cpu and memory usage graph for the project.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>project overview</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>project overview</p></figcaption></figure>
 
 ### Project settings
 
@@ -43,16 +43,16 @@ In the project settings, you can change the project **name**, **description**, a
 
 In the project settings, you can change the project name, description, and labels. You can also delete the project from the project settings which will also delete the namespace in the Kubernetes cluster.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>project settings</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>project settings</p></figcaption></figure>
 
 #### Advanced editing
 
 With advanced editing, you can add settings to the project that are not available in the UI. You can also see the raw CRD of the project.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>advanced editing</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption><p>advanced editing</p></figcaption></figure>
 
 #### New blueprint from project
 
 With a new blueprint from the project, you can create a new blueprint with the same settings as the project. The only thing which is not copied are the ingress settings.
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption><p>new blueprint from project</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption><p>new blueprint from project</p></figcaption></figure>
