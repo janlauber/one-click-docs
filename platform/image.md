@@ -14,7 +14,7 @@ If you don't want to manually update your image tag each time you push a new ver
 
 The behaviour and consept is similar to the one of fluxcd: [**https://fluxcd.io/flux/guides/image-update/**](https://fluxcd.io/flux/guides/image-update/)
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>auto update</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>auto update</p></figcaption></figure>
 
 #### Examples
 
@@ -22,4 +22,4 @@ The behaviour and consept is similar to the one of fluxcd: [**https://fluxcd.io/
 | ----------------- | --------- | ------------------------------------------------------------------ |
 | ^\d+.\d+.\d+$     | semver    | Default x.x.x semver pattern. e.g. 1.2.0 will get updated to 1.2.1 |
 | dev-^\d+.\d+.\d+$ | semver    | Default x.x.x semver pattern with a prefix.                        |
-| .*                | timestamp | Any pattern will get updated with a unix timestamp.                |
+| .\*               | timestamp | Any pattern will get updated with a unix timestamp.                |

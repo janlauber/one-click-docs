@@ -10,7 +10,7 @@ You can move the components with your mouse, zoom in and out and dig into its co
 
 When clicking on a component you can see its current applied manifest in-cluster configurations. This will give you some more information about the component itself.
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>manifest</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>manifest</p></figcaption></figure>
 
 When selecting a pod you can also see it's logs directly streamed:
 

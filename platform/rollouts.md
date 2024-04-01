@@ -2,7 +2,7 @@
 
 Each time you edit and change something in a project a new rollout will get created. This is like a **snapshot** of your [crd.md](../operator-manual/crd.md "mention") configuration. This gives you the power to undo any changes you did to your project configuration like changing the port of an interface or updating your image tag. You can see every rollout in the rollouts table. Through the frontend you won't be able to delete a rollout, you can just hide it. This is due to get some statistics about you rollouts. If you need to delete a rollout completely you need to go to the pocketbase backend and delete the record in the "rollouts" collection.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>rollouts overview</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>rollouts overview</p></figcaption></figure>
 
 ### Rollback diff
 

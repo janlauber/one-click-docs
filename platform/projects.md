@@ -33,7 +33,7 @@ There will be a Kubernetes namespace each One-Click project with certain labels:
 
 In the project overview, you can see the counts of: rollouts, instances, interfaces, volumes, envs and secrets. You can also see the current container image. There is also a cpu and memory usage graph for the project.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>project overview</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>project overview</p></figcaption></figure>
 
 ### Project settings
 
