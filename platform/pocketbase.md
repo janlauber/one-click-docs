@@ -6,7 +6,7 @@ Pocketbase offers the ability to extend it with our own golang code. You can lis
 
 You can find the code under the following link: [https://github.com/janlauber/one-click/tree/main/pocketbase](https://github.com/janlauber/one-click/tree/main/pocketbase)
 
-## Authentication
+### Authentication
 
 Pocketbase uses JWT tokens for authentication. The frontend sends a request to the pocketbase backend with the user credentials. The backend then checks if the user exists and if the password is correct. If everything is correct, the backend will return a JWT token. The frontend will then store this token in the local storage and use it for every request to the backend.
 
@@ -20,7 +20,13 @@ The frontend will automatically display the login buttons for these providers if
 
 <figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>pocketbase settings</p></figcaption></figure>
 
-## Endpoints
+### Database UML
+
+Generated with the [PocketBaseUML](https://pocketbase-uml.github.io) tool.
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>UML</p></figcaption></figure>
+
+### Endpoints
 
 Pocketbase allows you to create custom endpoints. These endpoints can be used to execute custom code. We use this feature to serve everything to the frontend. The custom endpoints are written in golang and you can find them in the `main.go` file under the `app.OnBeforeServe().Add(func(e *core.ServeEvent) error {` function.
 
@@ -44,14 +50,13 @@ Pocketbase allows you to create custom endpoints. These endpoints can be used to
 
 All endpoints are protected by the JWT authentication, except the websocket endpoints. The frontend will send the JWT token in the header of the request.
 
-## Environment Variables
+### Environment Variables
 
 | Variable Name | Default       | Description                                                                                                                        |
 | ------------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
 | `LOCAL`       | `false`       | Set to `true` if you're running KubeLab locally. It will take your local kubeconfig under **.kube/config**                         |
 | `CronTick`    | `*/1 * * * *` | The tick in cron notation at which the auto image update will check for new updates in the registry. Do not change this under 1min |
 
-## Extended Information
+### Extended Information
 
-For more information about pocketbase, please visit the [official documentation](https://pocketbase.io/docs).
-Also dig into the source code of our implementations and try to understand how we use pocketbase in our project.
+For more information about pocketbase, please visit the [official documentation](https://pocketbase.io/docs). Also dig into the source code of our implementations and try to understand how we use pocketbase in our project.
