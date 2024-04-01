@@ -8,7 +8,15 @@ You can find the code under the following link: [https://github.com/janlauber/on
 
 ## Authentication
 
+Pocketbase uses JWT tokens for authentication. The frontend sends a request to the pocketbase backend with the user credentials. The backend then checks if the user exists and if the password is correct. If everything is correct, the backend will return a JWT token. The frontend will then store this token in the local storage and use it for every request to the backend.
 
+We also support the ability to use the following authentication providers:
+
+- Google
+- Github
+- Microsoft
+
+The frontend will automatically display the login buttons for these providers if they are enabled in the pocketbase backend.
 
 ## Custom Endpoints
 
