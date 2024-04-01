@@ -20,9 +20,29 @@ The frontend will automatically display the login buttons for these providers if
 
 <figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>pocketbase settings</p></figcaption></figure>
 
-## Custom Endpoints
+## Endpoints
 
+Pocketbase allows you to create custom endpoints. These endpoints can be used to execute custom code. We use this feature to serve everything to the frontend. The custom endpoints are written in golang and you can find them in the `main.go` file under the `app.OnBeforeServe().Add(func(e *core.ServeEvent) error {` function.
 
+| Endpoint                                  | Method   | Description                                    |
+| ----------------------------------------- | -------- | ---------------------------------------------- |
+| `/`                                       | `*`      | Serves the frontend                            |
+| `/api`                                    | `*`      | Serves the backend                             |
+| `/_`                                      | `*`      | Serves the backend                             |
+| `/rollouts/:projectId/:rolloutId/status`  | `GET`    | Get rollout status                             |
+| `/rollouts/:projectId/:rolloutId/metrics` | `GET`    | Get rollout metrics                            |
+| `/rollouts/:projectId/:rolloutId/events`  | `GET`    | Get rollout events                             |
+| `/rollouts/:projectId/:podName/logs`      | `GET`    | Get pod logs                                   |
+| `/pb/blueprints/:blueprintId`             | `GET`    | Get blueprint                                  |
+| `/pb/blueprints/shared/:blueprintId`      | `POST`   | Share blueprint                                |
+| `/auto-update/:autoUpdateId`              | `POST`   | Auto update                                    |
+| `/cluster-info`                           | `GET`    | Get cluster info                               |
+| `/rollouts/:projectId/:podName`           | `DELETE` | Delete pod                                     |
+| `/ws/k8s/rollouts`                        | `GET`    | Websocket to get resource updates of a rollout |
+| `/ws/k8s/logs`                            | `GET`    | Websocket to get pod logs                      |
+| `/ws/k8s/events`                          | `GET`    | Websocket to get pod events                    |
+
+All endpoints are protected by the JWT authentication, except the websocket endpoints. The frontend will send the JWT token in the header of the request.
 
 ## Environment Variables
 
