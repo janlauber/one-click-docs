@@ -16,7 +16,7 @@ You can also set some labels for the project. Labels are used to group projects 
 
 Each project has it's own overview page where you can see the details of the project and it's resources.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>project card</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption><p>project card</p></figcaption></figure>
 
 There will be a Kubernetes namespace each One-Click project with certain labels:
 
@@ -43,16 +43,16 @@ In the project settings, you can change the project **name**, **description**, a
 
 In the project settings, you can change the project name, description, and labels. You can also delete the project from the project settings which will also delete the namespace in the Kubernetes cluster.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>project settings</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>project settings</p></figcaption></figure>
 
 #### Advanced editing
 
 With advanced editing, you can add settings to the project that are not available in the UI. You can also see the raw CRD of the project.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>advanced editing</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>advanced editing</p></figcaption></figure>
 
 #### New blueprint from project
 
 With a new blueprint from the project, you can create a new blueprint with the same settings as the project. The only thing which is not copied are the ingress settings.
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>new blueprint from project</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>new blueprint from project</p></figcaption></figure>

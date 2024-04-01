@@ -18,13 +18,13 @@ We also support the ability to use the following authentication providers:
 
 The frontend will automatically display the login buttons for these providers if they are enabled in the pocketbase backend.
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>pocketbase settings</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>pocketbase settings</p></figcaption></figure>
 
 ### Database UML
 
 Generated with the [PocketBaseUML](https://pocketbase-uml.github.io) tool.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>UML</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption><p>UML</p></figcaption></figure>
 
 ### Endpoints
 
