@@ -14,7 +14,7 @@ You will need the following to run OneClick:
 
 ### Installation
 
-1. Install the Operator Follow the installation instructions provided in the [one-click-operator repository](https://github.com/janlauber/one-click-operator).
+1. Install the Operator Follow the installation instructions provided in the [one-click-operator repository](https://github.com/janlauber/one-click-operator) or in the [setup-guide.md](../operator-manual/setup-guide.md "mention")
 2.  Install the UI & Backend Check out the [deployment](https://github.com/janlauber/one-click/tree/main/deployment) folder and change the values for your environment. Then run the following commands:
 
     ```sh
