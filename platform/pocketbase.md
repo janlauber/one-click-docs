@@ -24,7 +24,7 @@ The frontend will automatically display the login buttons for these providers if
 
 Generated with the [PocketBaseUML](https://pocketbase-uml.github.io) tool.
 
-<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption><p>UML</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/pb_diagram.png" alt=""><figcaption><p>UML</p></figcaption></figure>
 
 ### Endpoints
 

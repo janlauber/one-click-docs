@@ -26,5 +26,7 @@
 ## additional resources
 
 * [👩‍💻 Examples](additional-resources/examples/README.md)
+  * [Prebuilt Applications](additional-resources/examples/prebuilt-applications.md)
+  * [Github Actions](additional-resources/examples/github-actions.md)
   * [Streamlit](additional-resources/examples/streamlit.md)
   * [Golang](additional-resources/examples/golang.md)
