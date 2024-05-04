@@ -6,6 +6,12 @@ In the deployment overview, you can see the counts of: **rollouts**, **instances
 
 <figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>apache deployment overview</p></figcaption></figure>
 
+### Kubernetes Resources
+
+You can get all resources with the corresponding labels for the projectId and deploymentId set. So you can debug in your cluster if something breaks.
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 ### Deployment settings
 
 In the project settings, you can change the project **name**, **description**, and **labels**. You can also **delete** the project from the project settings. There is also an option to use _advanced editing_ mode for the project. Head over to the [crd.md](../operator-manual/crd.md "mention") section to learn more about the Operator CRD. You can also directly create a new **blueprint** from the selected project.

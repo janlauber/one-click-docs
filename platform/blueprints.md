@@ -10,7 +10,7 @@ After you are logged into your One-Click account you can see the Blueprints butt
 
 On this overview page you see your blueprints and also the one's from your community. These are blueprints other users in the same One-Click instance shared with you through a link.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>overview</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>overview</p></figcaption></figure>
 
 When you click on the 3 dots of a blueprint you can "edit", "share" or "delete" the selected blueprint.
 

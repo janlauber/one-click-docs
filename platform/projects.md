@@ -16,7 +16,7 @@ You can also set some labels for the project. Labels are used to group projects 
 
 Each project has it's own overview page where you can see the details of the project and it's resources.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>sample project</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>sample project</p></figcaption></figure>
 
 There will be a Kubernetes namespace each One-Click project with certain labels:
 
@@ -27,7 +27,7 @@ There will be a Kubernetes namespace each One-Click project with certain labels:
 | one-click.dev/userId      | The users ID of the project.          |
 | one-click.dev/username    | The username of the project.          |
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>In cluster namespace labels</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>In cluster namespace labels</p></figcaption></figure>
 
 ### Overview
 
