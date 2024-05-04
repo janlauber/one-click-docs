@@ -6,15 +6,15 @@
 ## Platform
 
 * [👖 Pocketbase](platform/pocketbase.md)
-* [📃 Blueprints](platform/blueprints.md)
 * [📂 Projects](platform/projects.md)
+* [📃 Blueprints](platform/blueprints.md)
+* [🟢 Deployments](platform/deployments.md)
 * [🗺️ Map](platform/map.md)
 * [⏱️ Rollouts](platform/rollouts.md)
 * [💾 Image](platform/image.md)
 * [↔️ Scale](platform/scale.md)
 * [🔀 Network](platform/network.md)
 * [💿 Volumes](platform/volumes.md)
-* [📦 Instances](platform/instances.md)
 * [🔐 Envs & Secrets](platform/envs-and-secrets.md)
 
 ## Operator manual

@@ -2,11 +2,11 @@
 
 On the scale page you can configure the two scaling options **horizontal** and **vertical**. The horizontal scaling is the number of instances (replicas) and the vertical scaling is the CPU and memory request and limit.
 
-<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption><p>scale</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption><p>scale</p></figcaption></figure>
 
 ### Horizontal
 
-You can define the number of minimum and maximum replicas. The **target CPU** defines the autoscaling behaviour. If the CPU usage is above the target CPU the replicas will get scaled up. To get the current CPU usage you can head over to the project **overview** page.
+You can define the number of minimum and maximum replicas. The **target CPU** defines the autoscaling behaviour. If the CPU usage is above the target CPU the replicas will get scaled up. To get the current CPU usage you can head over to the **deployment** **overview** page.
 
 ### Vertical
 

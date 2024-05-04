@@ -4,4 +4,4 @@ On the envs & secrets page you can configure the environment variables and secre
 
 Both the environment variables and secrets are available in the container as **environment** variables.
 
-<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption><p>envs &#x26; secrets overview</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption><p>envs &#x26; secrets overview</p></figcaption></figure>

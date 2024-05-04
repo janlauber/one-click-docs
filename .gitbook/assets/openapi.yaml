@@ -1,0 +1,410 @@
+openapi: 3.1.0
+info:
+  title: One-Click K8s Operations API
+  version: 1.0.0
+servers:
+  - url: https://example.com/api
+paths:
+  /pb/{projectId}/{deploymentId}/status:
+    get:
+      summary: Get the status of a specific deployment
+      parameters:
+        - in: path
+          name: projectId
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: deploymentId
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Deployment status
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeploymentStatus'
+        '404':
+          description: Deployment not found
+  /pb/{projectId}/{deploymentId}/metrics:
+    get:
+      summary: Get metrics for a specific deployment
+      parameters:
+        - in: path
+          name: projectId
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: deploymentId
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Deployment metrics
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PodMetricsResponse'
+        '404':
+          description: Deployment not found
+  /pb/{projectId}/{deploymentId}/events:
+    get:
+      summary: Get events for a specific deployment
+      parameters:
+        - in: path
+          name: projectId
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: deploymentId
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Events list for the deployment
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EventResponse'
+        '404':
+          description: Deployment not found
+  /pb/{projectId}/{podName}/logs:
+    get:
+      summary: Get logs for a specific pod
+      parameters:
+        - in: path
+          name: projectId
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: podName
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Pod logs
+          content:
+            application/text:
+              schema:
+                $ref: '#/components/schemas/LogResponse'
+        '404':
+          description: Pod not found
+  /pb/blueprints/{blueprintId}:
+    get:
+      summary: Retrieve a blueprint by ID
+      parameters:
+        - in: path
+          name: blueprintId
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Blueprint details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Blueprint'
+        '404':
+          description: Blueprint not found
+  /pb/blueprints/shared/{blueprintId}:
+    post:
+      summary: Share a blueprint
+      parameters:
+        - in: path
+          name: blueprintId
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Blueprint shared successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+        '404':
+          description: Blueprint not found
+  /pb/auto-update/{autoUpdateId}:
+    post:
+      summary: Trigger an automatic update
+      parameters:
+        - in: path
+          name: autoUpdateId
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Update initiated
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+  /pb/cluster-info:
+    get:
+      summary: Retrieve cluster information
+      responses:
+        '200':
+          description: Cluster information
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  clusterId:
+                    type: string
+                  status:
+                    type: string
+  /pb/{projectId}/{podName}:
+    delete:
+      summary: Delete a specific pod
+      parameters:
+        - in: path
+          name: projectId
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: podName
+          required: true
+          schema:
+            type: string
+      responses:
+        '204':
+          description: Pod deleted successfully
+        '404':
+          description: Pod not found
+  /ws/k8s/deployments:
+    get:
+      summary: Open a WebSocket to receive live deployment updates
+      responses:
+        '101':
+          description: WebSocket connection established
+  /ws/k8s/logs:
+    get:
+      summary: Open a WebSocket to receive live logs from pods
+      responses:
+        '101':
+          description: WebSocket connection established
+  /ws/k8s/events:
+    get:
+      summary: Open a WebSocket to receive live events from deployments
+      responses:
+        '101':
+          description: WebSocket connection established
+components:
+  schemas:
+    DeploymentStatus:
+      type: object
+      properties:
+        replicas:
+          type: integer
+        podNames:
+          type: array
+          items:
+            type: string
+        resources:
+          $ref: '#/components/schemas/DeploymentResources'
+        status:
+          type: string
+    DeploymentResources:
+      type: object
+      properties:
+        requestSum:
+          $ref: '#/components/schemas/Resources'
+        limitSum:
+          $ref: '#/components/schemas/Resources'
+    Resources:
+      type: object
+      properties:
+        cpu:
+          type: string
+        memory:
+          type: string
+    EventResponse:
+      type: object
+      properties:
+        events:
+          type: array
+          items:
+            $ref: '#/components/schemas/Event'
+    Event:
+      type: object
+      properties:
+        reason:
+          type: string
+        message:
+          type: string
+        typus:
+          type: string
+    PodMetricsResponse:
+      type: object
+      properties:
+        metrics:
+          type: array
+          items:
+            $ref: '#/components/schemas/PodMetrics'
+    PodMetrics:
+      type: object
+      properties:
+        name:
+          type: string
+        cpu:
+          type: string
+        memory:
+          type: string
+    LogResponse:
+      type: object
+      properties:
+        logs:
+          type: string
+    Blueprint:
+      type: object
+      properties:
+        id:
+          type: string
+        details:
+          type: string
+    Rollout:
+      type: object
+      properties:
+        APIVersion:
+          type: string
+        Kind:
+          type: string
+        Metadata:
+          type: object
+          properties:
+            Name:
+              type: string
+            Namespace:
+              type: string
+        Spec:
+          type: object
+          properties:
+            Image:
+              type: object
+              properties:
+                Registry:
+                  type: string
+                Repository:
+                  type: string
+                Tag:
+                  type: string
+            HorizontalScale:
+              type: object
+              properties:
+                MinReplicas:
+                  type: integer
+                MaxReplicas:
+                  type: integer
+                TargetCPUUtilizationPercentage:
+                  type: integer
+            Resources:
+              type: object
+              properties:
+                Requests:
+                  type: object
+                  properties:
+                    CPU:
+                      type: string
+                    Memory:
+                      type: string
+                Limits:
+                  type: object
+                  properties:
+                    CPU:
+                      type: string
+                    Memory:
+                      type: string
+            Env:
+              type: array
+              items:
+                type: object
+                properties:
+                  Name:
+                    type: string
+                  Value:
+                    type: string
+            Secrets:
+              type: array
+              items:
+                type: object
+                properties:
+                  Name:
+                    type: string
+                  Value:
+                    type: string
+            Volumes:
+              type: array
+              items:
+                type: object
+                properties:
+                  Name:
+                    type: string
+                  MountPath:
+                    type: string
+                  Size:
+                    type: string
+                  StorageClass:
+                    type: string
+            Interfaces:
+              type: array
+              items:
+                type: object
+                properties:
+                  Name:
+                    type: string
+                  Port:
+                    type: integer
+                  Ingress:
+                    type: object
+                    properties:
+                      IngressClass:
+                        type: string
+                      Annotations:
+                        type: object
+                        additionalProperties:
+                          type: string
+                      Rules:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            Host:
+                              type: string
+                            Path:
+                              type: string
+                            TLS:
+                              type: boolean
+                            TlsSecretName:
+                              type: string
+            ServiceAccountName:
+              type: string
+  securitySchemes:
+    OAuth2:
+      type: oauth2
+      flows:
+        authorizationCode:
+          authorizationUrl: https://example.com/auth
+          tokenUrl: https://example.com/token
+          scopes:
+            read: read access
+            write: write access
+security:
+  - OAuth2: [read, write]

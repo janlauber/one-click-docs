@@ -16,43 +16,27 @@ You can also set some labels for the project. Labels are used to group projects 
 
 Each project has it's own overview page where you can see the details of the project and it's resources.
 
-<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption><p>project card</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>sample project</p></figcaption></figure>
 
 There will be a Kubernetes namespace each One-Click project with certain labels:
 
-| label                             | description                           |
-| --------------------------------- | ------------------------------------- |
-| project.one-click.dev/displayName | The users display name in pocketbase. |
-| project.one-click.dev/name        | The project name which is the ID.     |
-| project.one-click.dev/userId      | The users ID of the project.          |
-| project.one-click.dev/username    | The username of the project.          |
+| label                     | description                           |
+| ------------------------- | ------------------------------------- |
+| one-click.dev/displayName | The users display name in pocketbase. |
+| one-click.dev/projectId   | The project name which is the ID.     |
+| one-click.dev/userId      | The users ID of the project.          |
+| one-click.dev/username    | The username of the project.          |
 
-<figure><img src="../.gitbook/assets/Screenshot 2024-03-30 at 16.48.07.png" alt=""><figcaption><p>example project namespace</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>In cluster namespace labels</p></figcaption></figure>
 
 ### Overview
 
-In the project overview, you can see the counts of: rollouts, instances, interfaces, volumes, envs and secrets. You can also see the current container image. There is also a cpu and memory usage graph for the project.
+In the project overview, you can see all the deployments in this project. You can also navigate to the **Blueprints**, create a **new Deployment** or make some **project settings**. In the listed deployments you can see it's status, the **ID** of the current rollout, the **amount** of running **replicas** in the cluster and the current **image** deployed.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>project overview</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Project overview</p></figcaption></figure>
 
 ### Project settings
 
-In the project settings, you can change the project **name**, **description**, and **labels**. You can also **delete** the project from the project settings. There is also an option to use _advanced editing_ mode for the project. Head over to the [crd.md](../operator-manual/crd.md "mention") section to learn more about the Operator CRD. You can also directly create a new **blueprint** from the selected project.
+In the project settings, you can change the project **name**, **avatar** and **labels**. You can also delete the project from the project settings which will also delete the **namespace** in the Kubernetes cluster.
 
-#### Project settings
-
-In the project settings, you can change the project name, description, and labels. You can also delete the project from the project settings which will also delete the namespace in the Kubernetes cluster.
-
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>project settings</p></figcaption></figure>
-
-#### Advanced editing
-
-With advanced editing, you can add settings to the project that are not available in the UI. You can also see the raw CRD of the project.
-
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption><p>advanced editing</p></figcaption></figure>
-
-#### New blueprint from project
-
-With a new blueprint from the project, you can create a new blueprint with the same settings as the project. The only thing which is not copied are the ingress settings.
-
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption><p>new blueprint from project</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>

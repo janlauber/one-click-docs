@@ -2,7 +2,7 @@
 
 Under images you can manage the image of the deployment. You can configure the **registry** (e.g. ghcr.io, docker.io), your **username** and **password** if it's private and also the **repository**/**image**. Last but not least you can define the image **tag**. If you need to debug something you can copy the current rollout ID to search the components inside the Kubernetes cluster.
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption><p>configuration</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption><p>configuration</p></figcaption></figure>
 
 ### Auto update
 
@@ -14,12 +14,8 @@ If you don't want to manually update your image tag each time you push a new ver
 
 The behaviour and consept is similar to the one of fluxcd: [**https://fluxcd.io/flux/guides/image-update/**](https://fluxcd.io/flux/guides/image-update/)
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>auto update</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption><p>auto update</p></figcaption></figure>
 
 #### Examples
 
-| Pattern           | Policy    | Note                                                               |
-| ----------------- | --------- | ------------------------------------------------------------------ |
-| ^\d+.\d+.\d+$     | semver    | Default x.x.x semver pattern. e.g. 1.2.0 will get updated to 1.2.1 |
-| dev-^\d+.\d+.\d+$ | semver    | Default x.x.x semver pattern with a prefix.                        |
-| .\*               | timestamp | Any pattern will get updated with a unix timestamp.                |
+<table><thead><tr><th>Pattern</th><th width="249">Policy</th><th>Note</th></tr></thead><tbody><tr><td>^\d+.\d+.\d+$</td><td>semver</td><td>Default x.x.x semver pattern. e.g. 1.2.0 will get updated to 1.2.1</td></tr><tr><td>dev-\d+.\d+.\d+$</td><td>semver</td><td>Default x.x.x semver pattern with a <strong>dev-</strong> prefix.</td></tr><tr><td>.*</td><td>timestamp</td><td>Any pattern will get updated with a <strong>unix</strong> timestamp.</td></tr><tr><td>preview-*</td><td>timestamp</td><td>A pattern with the <strong>preview-</strong> prefix which will get udpated with a <strong>unix</strong> timestamp.</td></tr></tbody></table>

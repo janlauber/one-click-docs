@@ -18,7 +18,7 @@ We also support the ability to use the following authentication providers:
 
 The frontend will automatically display the login buttons for these providers if they are enabled in the pocketbase backend.
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption><p>pocketbase settings</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption><p>pocketbase settings</p></figcaption></figure>
 
 ### Database UML
 
@@ -29,6 +29,56 @@ Generated with the [PocketBaseUML](https://pocketbase-uml.github.io) tool.
 ### Endpoints
 
 Pocketbase allows you to create custom endpoints. These endpoints can be used to execute custom code. We use this feature to serve everything to the frontend. The custom endpoints are written in golang and you can find them in the `main.go` file under the `app.OnBeforeServe().Add(func(e *core.ServeEvent) error {` function.
+
+{% swagger src="../.gitbook/assets/openapi.yaml" path="/pb/{projectId}/{deploymentId}/status" method="get" %}
+[openapi.yaml](../.gitbook/assets/openapi.yaml)
+{% endswagger %}
+
+{% swagger src="../.gitbook/assets/openapi.yaml" path="/pb/{projectId}/{deploymentId}/metrics" method="get" %}
+[openapi.yaml](../.gitbook/assets/openapi.yaml)
+{% endswagger %}
+
+{% swagger src="../.gitbook/assets/openapi.yaml" path="/pb/{projectId}/{deploymentId}/events" method="get" %}
+[openapi.yaml](../.gitbook/assets/openapi.yaml)
+{% endswagger %}
+
+{% swagger src="../.gitbook/assets/openapi.yaml" path="/pb/{projectId}/{podName}/logs" method="get" %}
+[openapi.yaml](../.gitbook/assets/openapi.yaml)
+{% endswagger %}
+
+{% swagger src="../.gitbook/assets/openapi.yaml" path="/pb/blueprints/{blueprintId}" method="get" %}
+[openapi.yaml](../.gitbook/assets/openapi.yaml)
+{% endswagger %}
+
+{% swagger src="../.gitbook/assets/openapi.yaml" path="/pb/blueprints/shared/{blueprintId}" method="post" %}
+[openapi.yaml](../.gitbook/assets/openapi.yaml)
+{% endswagger %}
+
+{% swagger src="../.gitbook/assets/openapi.yaml" path="/pb/auto-update/{autoUpdateId}" method="post" %}
+[openapi.yaml](../.gitbook/assets/openapi.yaml)
+{% endswagger %}
+
+{% swagger src="../.gitbook/assets/openapi.yaml" path="/pb/cluster-info" method="get" %}
+[openapi.yaml](../.gitbook/assets/openapi.yaml)
+{% endswagger %}
+
+{% swagger src="../.gitbook/assets/openapi.yaml" path="/pb/{projectId}/{podName}" method="delete" %}
+[openapi.yaml](../.gitbook/assets/openapi.yaml)
+{% endswagger %}
+
+{% swagger src="../.gitbook/assets/openapi.yaml" path="/ws/k8s/deployments" method="get" %}
+[openapi.yaml](../.gitbook/assets/openapi.yaml)
+{% endswagger %}
+
+{% swagger src="../.gitbook/assets/openapi.yaml" path="/ws/k8s/logs" method="get" %}
+[openapi.yaml](../.gitbook/assets/openapi.yaml)
+{% endswagger %}
+
+{% swagger src="../.gitbook/assets/openapi.yaml" path="/ws/k8s/events" method="get" %}
+[openapi.yaml](../.gitbook/assets/openapi.yaml)
+{% endswagger %}
+
+#### Table
 
 | Endpoint                                  | Method   | Description                                    |
 | ----------------------------------------- | -------- | ---------------------------------------------- |
