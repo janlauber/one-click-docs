@@ -161,12 +161,12 @@ spec:
     username: ''
   interfaces:
     - ingress:
-        ingressClass: nginx-external
+        ingressClass: nginx-external # replace with your ingress class
         rules:
           - host: ghost.one-click.dev
             path: /
             tls: true
-            tlsSecretName: wildcard-cert
+            tlsSecretName: wildcard-cert # replace with your tls secret name
       name: http
       port: 2368
   resources:
