@@ -2,7 +2,7 @@
 
 On the scale page you can configure the two scaling options **horizontal** and **vertical**. The horizontal scaling is the number of instances (replicas) and the vertical scaling is the CPU and memory request and limit.
 
-<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption><p>scale</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption><p>scale</p></figcaption></figure>
 
 ### Horizontal
 

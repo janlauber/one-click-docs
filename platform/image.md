@@ -2,7 +2,7 @@
 
 Under images you can manage the image of the deployment. You can configure the **registry** (e.g. ghcr.io, docker.io), your **username** and **password** if it's private and also the **repository**/**image**. Last but not least you can define the image **tag**. If you need to debug something you can copy the current rollout ID to search the components inside the Kubernetes cluster.
 
-<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption><p>configuration</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption><p>configuration</p></figcaption></figure>
 
 ### Auto update
 
@@ -14,7 +14,7 @@ If you don't want to manually update your image tag each time you push a new ver
 
 The behaviour and consept is similar to the one of fluxcd: [**https://fluxcd.io/flux/guides/image-update/**](https://fluxcd.io/flux/guides/image-update/)
 
-<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption><p>auto update</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption><p>auto update</p></figcaption></figure>
 
 #### Examples
 

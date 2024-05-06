@@ -2,7 +2,7 @@
 
 For the network, you have a few options to configure. You can define as many services and ingress interfaces as you want. The services are the internal Kubernetes services and the ingress is the external access to your services. To create a new network interface you can click the **New Interface** button.
 
-<figure><img src="../.gitbook/assets/image (14) (1).png" alt=""><figcaption><p>new interface</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (57).png" alt=""><figcaption><p>new interface</p></figcaption></figure>
 
 You can define the following options:
 
@@ -16,7 +16,7 @@ You can define the following options:
 
 The <mark style="color:green;">**DNS name**</mark> is the actual Kubernetes Service name in the cluster. This name you can use in other deployments to connect to the service via DNS lookup. (click on the copy icon to copy the name).
 
-<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption><p>interfaces overview</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption><p>interfaces overview</p></figcaption></figure>
 
 {% hint style="info" %}
 If you set the ingress class to **none**, **remove** the host and path and disable the TLS switch, the ingress will get deleted and only the service will get created. This is useful if you want to expose the service only internally for other services **inside** the Kubernetes cluster.

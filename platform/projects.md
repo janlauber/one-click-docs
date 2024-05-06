@@ -27,16 +27,16 @@ There will be a Kubernetes namespace each One-Click project with certain labels:
 | one-click.dev/userId      | The users ID of the project.          |
 | one-click.dev/username    | The username of the project.          |
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>In cluster namespace labels</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>In cluster namespace labels</p></figcaption></figure>
 
 ### Overview
 
 In the project overview, you can see all the deployments in this project. You can also navigate to the **Blueprints**, create a **new Deployment** or make some **project settings**. In the listed deployments you can see it's status, the **ID** of the current rollout, the **amount** of running **replicas** in the cluster and the current **image** deployed.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Project overview</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>Project overview</p></figcaption></figure>
 
 ### Project settings
 
 In the project settings, you can change the project **name**, **avatar** and **labels**. You can also delete the project from the project settings which will also delete the **namespace** in the Kubernetes cluster.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
