@@ -102,10 +102,11 @@ All endpoints are protected by the JWT authentication, except the websocket endp
 
 ### Environment Variables
 
-| Variable Name | Default       | Description                                                                                                                        |
-| ------------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| `LOCAL`       | `false`       | Set to `true` if you're running KubeLab locally. It will take your local kubeconfig under **.kube/config**                         |
-| `CronTick`    | `*/1 * * * *` | The tick in cron notation at which the auto image update will check for new updates in the registry. Do not change this under 1min |
+| Variable Name           | Default          | Description                                                                                                                            |
+| ----------------------- | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| `LOCAL`                 | `false`          | Set to `true` if you're running KubeLab locally. It will take your local kubeconfig under **.kube/config**                             |
+| `LOCAL_KUBECONFIG_FILE` | `~/.kube/config` | Set to the path of your kubeconfig file if you're running KubeLab locally. It will take your local kubeconfig under the specified path |
+| `CronTick`              | `*/1 * * * *`    | The tick in cron notation at which the auto image update will check for new updates in the registry. Do not change this under 1min     |
 
 ### Extended Information
 

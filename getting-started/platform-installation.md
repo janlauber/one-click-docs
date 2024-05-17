@@ -15,7 +15,7 @@ You will need the following to run OneClick:
 ### Installation
 
 {% hint style="info" %}
-You can also run the one-click container outside of the corresponding Kubernetes cluster and make sure it has access to the `~/.kube/config` of the executing user and the env `LOCAL=true` set.
+You can also run the one-click container outside of the corresponding Kubernetes cluster and make sure it has access to the `~/.kube/config` of the executing user and the env `LOCAL=true` set. You can also use the `LOCAL_KUBECONFIG_FILE=/path/to/kubeconfig` env to specify a different kubeconfig file.
 {% endhint %}
 
 1. Install the Operator Follow the installation instructions provided in the [one-click-operator repository](https://github.com/janlauber/one-click-operator) or in the [setup-guide.md](../operator-manual/setup-guide.md "mention")
