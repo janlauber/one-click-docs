@@ -35,6 +35,7 @@ metadata:
 spec:
   args: ["nginx", "-g", "daemon off;"]
   command: ["nginx"]
+  rolloutStrategy: rollingUpdate # or "recreate" (if not specified then "rollingUpdate" is used)
   image:
     registry: "docker.io"
     repository: "nginx"
