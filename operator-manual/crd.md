@@ -17,6 +17,7 @@ The Kubernetes objects included in this abstraction are:
 * Persistent Volume Claims
 * Services
 * Ingresses
+* CronJobs
 * Service Account
 
 Each of these components plays a vital role in the Kubernetes ecosystem, contributing to aspects like deployment management, security, scaling, and connectivity.
