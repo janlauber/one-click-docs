@@ -44,6 +44,11 @@ spec:
       operator: "Equal"
       value: "ssd"
       effect: "NoSchedule"
+  hostAliases:
+    - ip: "10.10.10.10"
+      hostnames:
+        - "foo.local"
+        - "bar.local"
   image:
     registry: "docker.io"
     repository: "nginx"
